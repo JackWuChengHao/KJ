@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 var unconfirmedTable = new TableView('unconfirmedTable');
-unconfirmedTable.url = '/TBNCRMS/getUnconfirmedHandleNcrInfoList';
+unconfirmedTable.url = '/webapp/getUnconfirmedHandleNcrInfoList';
 unconfirmedTable.initHeader([
 	{id:'ico',name:'',width:2,align:'center'},
 	{id:'marker',width:2,align:'right',type:'radio'},

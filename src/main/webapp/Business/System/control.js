@@ -57,7 +57,7 @@ function dialogUpdateUserSubmit(){
 		}
 	});
 
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/updataUserRoles",{'userId':selectList[0].id,'roleList':roleList}));
+	var isSuccess = alertResult(sendAjax("/webapp/updataUserRoles",{'userId':selectList[0].id,'roleList':roleList}));
 	if(isSuccess){
 		$("#updateUserDialog").modal('hide');
 	}
@@ -79,7 +79,7 @@ function clearRoleDialog(){
  * @returns
  */
 function initcheckBoxRoleDialog(userId){
-	var data = sendAjax("/TBNCRMS/getRolesByUserId",{'userId':userId});
+	var data = sendAjax("/webapp/getRolesByUserId",{'userId':userId});
 	var roleList = data.rows;
 	for(var i in roleList){
 		$("#rolesGroup input").each(function(){
@@ -149,7 +149,7 @@ function bindUpdateUserAuthorityDialogBtn(){
 }
 
 function submitUserAuthority(userId,allowOperate){
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/updataUserAuthority",{"userId":userId,"authority":allowOperate}));
+	var isSuccess = alertResult(sendAjax("/webapp/updataUserAuthority",{"userId":userId,"authority":allowOperate}));
 	if(isSuccess){
 		$("#updateUserAuthorityDialog").modal("hide");
 		$("#userInfoTable-reflesh").trigger("click");
@@ -188,7 +188,7 @@ function doubleConfirmSystem(){
  */
 function bindUserUpdateBtn(){
 	$("#userUpdateBtn").on("click",function(){
-		var data = sendAjax("/TBNCRMS/updateUserInfo");
+		var data = sendAjax("/webapp/updateUserInfo");
 		if(data["code"] !== 0){
 			swal("", data["msg"], "error");
 		} else {

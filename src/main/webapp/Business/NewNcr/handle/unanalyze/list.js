@@ -2,7 +2,7 @@ $(document).ready(function(){
 });
 
 var unanalyzeTable = new TableView('newNcrUnreplyedTable');
-unanalyzeTable.url = '/TBNCRMS/getUnanalyzeHandleNcrInfoList';
+unanalyzeTable.url = '/webapp/getUnanalyzeHandleNcrInfoList';
 unanalyzeTable.initHeader([
 	{id:'ico',name:'',width:2,align:'center'},
 	{id:'marker',width:2,align:'right',type:'radio'},
@@ -60,16 +60,16 @@ unanalyzeTable.render();
 function getUnanalyzeTableIco(ncrInfo){
 	var activitiStatus = ncrInfo["activitiStatus"]
 	if(activitiStatus === 8){
-		return '<img class="img img-refuse" alt="提示" src="/TBNCRMS/imgs/u2295.png">';
+		return '<img class="img img-refuse" alt="提示" src="/webapp/imgs/u2295.png">';
 	};
 	if(activitiStatus === 6){
-		return '<img class="img img-finish" alt="提示" src="/TBNCRMS/imgs/u2356.png">';
+		return '<img class="img img-finish" alt="提示" src="/webapp/imgs/u2356.png">';
 	}
 	if(activitiStatus === 4){
-		return '<img class="img img-audit" alt="提示" src="/TBNCRMS/imgs/u2236.png">';
+		return '<img class="img img-audit" alt="提示" src="/webapp/imgs/u2236.png">';
 	}
 	if(activitiStatus === 3){
-		return '<img class="img img-new" alt="提示" src="/TBNCRMS/imgs/u95.png">';
+		return '<img class="img img-new" alt="提示" src="/webapp/imgs/u95.png">';
 	}
 }
 

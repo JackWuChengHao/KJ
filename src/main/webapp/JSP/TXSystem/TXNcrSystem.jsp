@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">用户信息</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">用户信息</span> 
 					</div>
 					<div class="form-inline">
 						<label class="TXPage-searchlabel">姓名</label>
@@ -48,7 +48,7 @@
 	<jsp:include page="./TXUpdateUserAuthorityDialog.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/System/list.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/System/control.js"></script>
+	<script type="text/javascript" src="/webapp/Business/System/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/System/control.js"></script>
 </body>
 </html>

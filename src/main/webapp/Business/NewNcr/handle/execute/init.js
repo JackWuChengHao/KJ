@@ -84,7 +84,7 @@ function initEvidenceUploadInput(){
     //初始化上传控件的样式
     $("#evidenceUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 100,
 		showUpload : true,
@@ -103,7 +103,7 @@ function initEvidenceUploadInput(){
 
     $("#commitMeasureChangeDialogUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 100,
 		showUpload : true,
@@ -159,7 +159,7 @@ function bindClearFileList(){
  * @returns
  */
 function initDistributeExeDialogPointerSelect(){
-	var result = sendAjax("/TBNCRMS/getPointerList",{});
+	var result = sendAjax("/webapp/getPointerList",{});
 	if(result["code"] !== 0){
 		return;
 	}
@@ -210,7 +210,7 @@ function bindEvidenceDialogSubmitfinal(){
 		evidenceFileList.push(rows[i]["fileId"]);
 	}
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/commitNcrMeasureEvidence",
+	var isSuccess = alertResult(sendAjax("/webapp/commitNcrMeasureEvidence",
 			{"id":measureId,"filelist":evidenceFileList}));
 	
 	if(isSuccess){
@@ -286,7 +286,7 @@ function bindCommitMeasureChangeDialogSubmitBtn(){
 			return;
 		}
 		
-		var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"code":5});
+		var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"code":5});
 		if(wordData["code"] !== 0){
 			swal("提示", wordData["msg"], "error");
 			return;
@@ -318,7 +318,7 @@ function MeasureChangeCommitfinal(){
 		changeType+="措施变更";
 	}
 
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/commitNcrMeasureChange",
+	var isSuccess = alertResult(sendAjax("/webapp/commitNcrMeasureChange",
 			{"measureIdList":measureIdList,"fileId":fileId,"changeType":changeType}));
 	
 	if(isSuccess){
@@ -407,7 +407,7 @@ function showMeasuresDetailDialog(rowIndex){
 	
 	var measureId = executingTable.get(rowIndex)["measureNumber"];
 
-	var data = sendAjax("/TBNCRMS/selectNcrMeasureChangeList",{"measureId":measureId});
+	var data = sendAjax("/webapp/selectNcrMeasureChangeList",{"measureId":measureId});
 	if(data["code"] !== 0){
 		swal("提示", data["msg"], "error");
 		return;
@@ -498,7 +498,7 @@ function distributeExeDialogPoint(){
 		if(confirm){
 			var measureId =  selectedList[0]["measureNumber"];
 			
-			var isSuccess = alertResult(sendAjax("/TBNCRMS/pointMeasure",
+			var isSuccess = alertResult(sendAjax("/webapp/pointMeasure",
 					{"measureId":measureId,"userId":userId}));
 			if(isSuccess){
 				$("#distributeExeDialog").modal("hide");

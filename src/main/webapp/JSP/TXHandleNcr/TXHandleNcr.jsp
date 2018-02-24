@@ -14,7 +14,7 @@
 			<div class="main-content">
 				<div class="container"><br/>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项处理</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项处理</span> 
 					</div>
 					<div class="form-inline">
 						<label class="TXPage-searchlabel">流水号/编号</label>
@@ -89,12 +89,12 @@
 	<jsp:include page="/JSP/TXHandleNcr/execute/TXAllMeasuresDetailDialog.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/common/searchControl.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/unconfirmed/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/unconfirmed/list.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/unanalyze/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/unanalyze/list.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/execute/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/handle/execute/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/common/searchControl.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unconfirmed/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unconfirmed/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unanalyze/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unanalyze/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/execute/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/execute/list.js"></script>
 </body>
 </html>

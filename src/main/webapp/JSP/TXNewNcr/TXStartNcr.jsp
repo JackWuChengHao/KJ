@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项发起</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项发起</span> 
 					</div>
 					<form action="#" id="TXStartNcrForm">
 						<div class="form-inline">
@@ -94,12 +94,12 @@
 	</div>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/common/searchControl.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unconfirmed/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unconfirmed/list.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unreplyed/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unreplyed/list.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unpassed/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/start/unpassed/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/common/searchControl.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unconfirmed/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unconfirmed/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unreplyed/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unreplyed/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unpassed/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/start/unpassed/list.js"></script>
 </body>
 </html>

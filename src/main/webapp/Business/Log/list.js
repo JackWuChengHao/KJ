@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 var userLogTable = new TableView('userLogTable');
-userLogTable.url = '/TBNCRMS/getOperateLogList';
+userLogTable.url = '/webapp/getOperateLogList';
 userLogTable.initHeader([
 	{id:'index',name:'序号',width:5,align:'center',key:true},
 	{id:'username',name:'用户名',width:15,align:'center'},

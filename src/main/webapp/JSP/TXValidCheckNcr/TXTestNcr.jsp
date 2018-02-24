@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">有效性验证</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">有效性验证</span> 
 					</div>
 					<div class="form-inline">
 						<label class="TXPage-searchlabel">流水号/编号</label>
@@ -68,8 +68,8 @@
 	<jsp:include page="./TXValidCheckCommitDialog.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/verity/searchControl.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/verity/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/NewNcr/verity/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/verity/searchControl.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/verity/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/NewNcr/verity/list.js"></script>
 </body>
 </html>

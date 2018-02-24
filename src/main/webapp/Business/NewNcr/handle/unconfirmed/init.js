@@ -43,7 +43,7 @@ function ncrHandlerComfirmfinal(){
 	}
 	
 	var id = selectedList[0]["id"];
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/comfiredHandleNcrInfo",{'id':id}));
+	var isSuccess = alertResult(sendAjax("/webapp/comfiredHandleNcrInfo",{'id':id}));
 	
 	if(isSuccess){
 		$("#unconfirmedTable-reflesh").trigger("click");
@@ -115,7 +115,7 @@ function bindTrundownBtnfinal(){
 	}
 	reason = stripencodescript(reason);
 	var id = selectedList[0]["id"];
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/turnDownHandleNcrInfo",{'id':id,'reason':reason}));
+	var isSuccess = alertResult(sendAjax("/webapp/turnDownHandleNcrInfo",{'id':id,'reason':reason}));
 	if(isSuccess){
 		clearRefuseNcrDialog();
 		$("#refuseNcrDialog").modal("hide");

@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 var validCheckTable = new TableView('validCheckTable');
-validCheckTable.url = '/TBNCRMS/getValidCheckNcrInfoList';
+validCheckTable.url = '/webapp/getValidCheckNcrInfoList';
 validCheckTable.initHeader([
 	{id:'marker',width:2,align:'right',type:'radio'},
 	{id:'index',name:'序号',width:5,align:'center',key:true},
@@ -52,7 +52,7 @@ var validCheckDialogTable;
 function initValidCheckDialogTable(ncrId){
 	validCheckDialogTable = new TableView('validCheckDialogTable');
 	validCheckDialogTable.putOneoffParam("ncrId",ncrId);
-	validCheckDialogTable.url = '/TBNCRMS/getValidCheckHistoryByNcrId';
+	validCheckDialogTable.url = '/webapp/getValidCheckHistoryByNcrId';
 	validCheckDialogTable.showPageComp = false;
 	validCheckDialogTable.initHeader([
 		{id:'index',name:'序号',width:20,align:'center',key:true},

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	formatDate();
 	initNecessaryItems();
-	typeList = sendAjax("/TBNCRMS/getTypeListBySource",{'sourceId':null})['rows'];
+	typeList = sendAjax("/webapp/getTypeListBySource",{'sourceId':null})['rows'];
 	self.setInterval("flushSystemTime()",30*1000);
 });
 
@@ -170,7 +170,7 @@ function downloadFile(id){
 		swal("", "文件不存在", "error");
 		return;
 	}
-	window.location.href = "/TBNCRMS/downloadFile?id=" + id;
+	window.location.href = "/webapp/downloadFile?id=" + id;
 }
 
 /**
@@ -178,7 +178,7 @@ function downloadFile(id){
  * @param id
  */
 function downloadEvidences(id){
-	var data = sendAjax("/TBNCRMS/isNcrMeasureHasEvidence",{"measureId":id});
+	var data = sendAjax("/webapp/isNcrMeasureHasEvidence",{"measureId":id});
 	if(data["code"] !== 0){
 		swal("提示", data["msg"], "error");
 		return;
@@ -187,7 +187,7 @@ function downloadEvidences(id){
 		swal("提示", "该措施未上传证据文件", "warning");
 		return;
 	}
-	window.location.href = "/TBNCRMS/downloadEvidences?id=" + id;
+	window.location.href = "/webapp/downloadEvidences?id=" + id;
 }
 /**
  * 通过措施id下载表单和措施变更文件
@@ -195,7 +195,7 @@ function downloadEvidences(id){
  * @returns
  */
 function downloadFileAndChangeFiles(id){
-	window.location.href = "/TBNCRMS/downloadFileAndChangeFiles?id=" + id;
+	window.location.href = "/webapp/downloadFileAndChangeFiles?id=" + id;
 }
 
 /**
@@ -203,7 +203,7 @@ function downloadFileAndChangeFiles(id){
  * @returns
  */
 function bindSourceSelect(sourceSelectId){
-	var result = sendAjax("/TBNCRMS/getTypeSourceList");
+	var result = sendAjax("/webapp/getTypeSourceList");
 	if(result["code"] !== 0){
 		swal("", data["msg"], "error");
 		return;
@@ -244,7 +244,7 @@ function isTypeNeedForm(typeId){
 	}
 }
 function initTypeSelect(typeSelectId,sourceId){
-	var result = sendAjax("/TBNCRMS/getTypeListBySource",{'sourceId':sourceId});
+	var result = sendAjax("/webapp/getTypeListBySource",{'sourceId':sourceId});
 	if(result["code"] !== 0){
 		swal("", data["msg"], "error");
 		return;
@@ -260,7 +260,7 @@ function initTypeSelect(typeSelectId,sourceId){
  * @returns
  */
 function initDepartmentSelect(departmentSelectId){
-	var data = sendAjax("/TBNCRMS/getDepartmentList");
+	var data = sendAjax("/webapp/getDepartmentList");
 	if(data["code"] !== 0){
 		swal("", data["msg"], "error");
 		return;
@@ -280,7 +280,7 @@ function initDepartmentSelect(departmentSelectId){
 function initCreatePersionSelect(createPersionSelectId){
 	var element = $("#"+createPersionSelectId);
 	element.on("mousedown",function(){
-		var data = sendAjax("/TBNCRMS/getCreatePersionList");
+		var data = sendAjax("/webapp/getCreatePersionList");
 		if(data["code"] !== 0){
 			swal("", data["msg"], "error");
 			return;
@@ -391,7 +391,7 @@ function flushSystemTime(){
 	$.ajax({
 		type:"POST",
 		contentType : "application/json;charset=utf-8",
-		url : "/TBNCRMS/getSystemTime",
+		url : "/webapp/getSystemTime",
 		async : true,
 		success : function(data,status){
 			if(data == null || data["code"] !== 0){

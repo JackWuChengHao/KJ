@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 	var newNcrUnpassedTable = new TableView('newNcrUnpassedTable');
-	newNcrUnpassedTable.url = '/TBNCRMS/getUncheckMeasureList';
+	newNcrUnpassedTable.url = '/webapp/getUncheckMeasureList';
 	newNcrUnpassedTable.initHeader([
 		{id:'ico',name:'',width:2,align:'center'},
 		{id:'marker',width:2,align:'right',type:'radio'},

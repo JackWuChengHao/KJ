@@ -30,7 +30,7 @@ function initUploadInput(){
     //初始化上传控件的样式
     $("#analyzeNcrUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 1,
 		showUpload : true,
@@ -59,7 +59,7 @@ function initUploadInput(){
 		if(ncrInfo["ncrtype"]==='原处置单'){
 			return;
 		}
-		var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"typeId":ncrInfo["ncrtypeId"],"code":1});
+		var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"typeId":ncrInfo["ncrtypeId"],"code":1});
 		if(wordData["code"] !== 0){
 			swal("提示", wordData["msg"], "error");
 			return;
@@ -99,7 +99,7 @@ function clearMeasureTable(){
  * @returns
  */
 function initPointerSelect(){
-	var result = sendAjax("/TBNCRMS/getPointerList",{});
+	var result = sendAjax("/webapp/getPointerList",{});
 	if(result["code"] !== 0){
 		return;
 	}
@@ -194,7 +194,7 @@ function bindDistributeDialogSubmitfinal(){
 		return;
 	}
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/pointHandleNcrInfo",{"id":id,"userId":userId}));
+	var isSuccess = alertResult(sendAjax("/webapp/pointHandleNcrInfo",{"id":id,"userId":userId}));
 	
 	if(isSuccess){
 		clearDistributeDialogForm();
@@ -302,7 +302,7 @@ function bindHandlerUnanalyzeAnalyzeBtn(){
 			$("#analyzeAuditDialogProblemType").text(ncrInfo["problemType"]);
 			$("#analyzeAuditDialogReason").val(ncrInfo["analyzeContext"]);
 			
-			var data = sendAjax("/TBNCRMS/getMeasureListByAnalyzeId",{"id":ncrInfo["analyzeId"]});
+			var data = sendAjax("/webapp/getMeasureListByAnalyzeId",{"id":ncrInfo["analyzeId"]});
 			if(data["code"] !== 0){
 				swal("提示", data["msg"], "error");
 				return;
@@ -510,7 +510,7 @@ function bindAnalyzeDialogSubmitfinal(){
 	var delayReason = $("#analyzeDialogDelayReason").val().trim();
 	var ncrReason = $("#analyzeDialogNcrReason").val().trim();
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/analyzeNcrInfo",
+	var isSuccess = alertResult(sendAjax("/webapp/analyzeNcrInfo",
 			{"id":ncrInfo["id"],"fileId":fileId,"problemType":problemType,
 				"measureList":analyzeDialogEvidenceTable.getDataSource(),
 				"delayReason":delayReason,"ncrReason":ncrReason}
@@ -580,7 +580,7 @@ function finalizeBtnfinal(){
 		return;
 	}
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/finalize",{"id":ncrInfo["id"]}));
+	var isSuccess = alertResult(sendAjax("/webapp/finalize",{"id":ncrInfo["id"]}));
 	if(isSuccess){
 		$("#unconfirmedTable-reflesh").trigger("click");
 		$("#newNcrUnreplyedTable-reflesh").trigger("click");
@@ -661,7 +661,7 @@ function bindAnalyzeAuditDialogChangefinalsubmit(){
 	var ncrInfo = selectedList[0];
 	var person = $("#fixUnpassReasonAndRedistributeInlinePersion").val();
 	var audit = $("#fixUnpassReasonAndRedistributeAudit").val().trim();
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/auditHandleNcrInfo",{"id":ncrInfo["id"],"audit":audit,"result":1,"person":person}));
+	var isSuccess = alertResult(sendAjax("/webapp/auditHandleNcrInfo",{"id":ncrInfo["id"],"audit":audit,"result":1,"person":person}));
 	if(isSuccess){
 		$("#analyzeDialog").modal("hide");
 		$("#fixUnpassReasonAndRedistribute").modal("hide");
@@ -708,7 +708,7 @@ function bindAnalyzeAuditDialogSubmitfinal(){
 	}
 	var person = selectedList[0]["pointpersonId"];
 	var ncrInfo = selectedList[0];
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/auditHandleNcrInfo",{"id":ncrInfo["id"],"person":person,"result":'0',"audit":"审核通过"}));
+	var isSuccess = alertResult(sendAjax("/webapp/auditHandleNcrInfo",{"id":ncrInfo["id"],"person":person,"result":'0',"audit":"审核通过"}));
 	
 	if(isSuccess){
 		$("#analyzeAuditDialog").modal("hide");

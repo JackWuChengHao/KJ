@@ -12,7 +12,7 @@ function initUploadInput(){
     //初始化上传控件的样式
     $("#addNewVaildCheckDialogUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 1,
 		showUpload : true,

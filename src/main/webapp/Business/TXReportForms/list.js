@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 var reportFormsTable = new TableView('reportFormsTable');
-reportFormsTable.url = '/TBNCRMS/getNcrInfoReportList';
+reportFormsTable.url = '/webapp/getNcrInfoReportList';
 reportFormsTable.initHeader([
 	{id:'index',name:'序号',width:5,align:'center',key:true},
 	{id:'serialNumber',name:'流水号/编号',width:18,align:'center'},

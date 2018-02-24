@@ -82,7 +82,7 @@ function bindNewCheckDialogSubmitBtn(){
 		var isLast = $("#newCheckDialogIsLast").prop("checked");
 		var fileId = $("#newCheckDialogUploadFile").val();
 		
-		var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"code":3,"ncrId":ncrId});
+		var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"code":3,"ncrId":ncrId});
 		if(wordData["code"] !== 0){
 			swal("提示", wordData["msg"], "error");
 			return;
@@ -99,7 +99,7 @@ function bindNewCheckDialogSubmitBtn(){
 		$("#TXValidCheckCommitDialogNumber").text($("#validCheckDialogNumber").text());
 		
 		if(isLast){
-			wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"code":4,"ncrId":ncrId});
+			wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"code":4,"ncrId":ncrId});
 			if(wordData["code"] !== 0){
 				swal("提示", wordData["msg"], "error");
 				return;
@@ -149,7 +149,7 @@ function clickValidCheckCommitDialogSubmit(){
 	var ncrId = Number($("#validCheckDialogNcrInfoId").val());
 	var isLast = $("#newCheckDialogIsLast").prop("checked");
 	var fileId = $("#newCheckDialogUploadFile").val()
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/insertValidCheck",{"ncrId":ncrId,"fileId":fileId,"isLast":isLast}));
+	var isSuccess = alertResult(sendAjax("/webapp/insertValidCheck",{"ncrId":ncrId,"fileId":fileId,"isLast":isLast}));
 	
 	if(isSuccess){
 		clearNewCheckForm();

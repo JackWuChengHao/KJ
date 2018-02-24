@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">历史开具项</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">历史开具项</span> 
 					</div>
 					<div class="form-inline">
 						<label class="TXPage-searchlabel">流水号/编号</label>
@@ -67,7 +67,7 @@
 	</div>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/HistoryNcr/searchControl.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/HistoryNcr/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/HistoryNcr/searchControl.js"></script>
+	<script type="text/javascript" src="/webapp/Business/HistoryNcr/list.js"></script>
 </body>
 </html>

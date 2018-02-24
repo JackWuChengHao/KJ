@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 var userInfoTable = new TableView('userInfoTable');
-userInfoTable.url = '/TBNCRMS/getUserList';
+userInfoTable.url = '/webapp/getUserList';
 userInfoTable.initHeader([
 	{id:'marker',name:'',width:2,align:'center',type:'radio'},
 	{id:'index',name:'序号',width:5,align:'center',key:true},

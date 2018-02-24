@@ -26,7 +26,7 @@ function initUploadInput(){
     //初始化上传控件的样式
     $("#unconfirmedNewNcrUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 1,
 		showUpload : true,
@@ -44,7 +44,7 @@ function initUploadInput(){
 	});
     $("#unconfirmedChangeNcrUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 1,
 		showUpload : true,
@@ -270,7 +270,7 @@ function bindUnconfirmedNewNcrDialogSubmitBtn(){
 						swal("", "信息不完整", "error");
 						return;
 					}
-					var isSuccess = alertResult(sendAjax("/TBNCRMS/insertStartNcrInfo",
+					var isSuccess = alertResult(sendAjax("/webapp/insertStartNcrInfo",
 							{'sourceId':sourceId,'typeId':typeId,'fileId':fileId,'departmentId':departmentId,
 							'describe':description,'shouldAnswerTime':modalnewNcrTime,'auditObject':auditObject}
 					));
@@ -286,7 +286,7 @@ function bindUnconfirmedNewNcrDialogSubmitBtn(){
 			return;
 		}
 		
-		var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"code":0,"typeId":typeId});
+		var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"code":0,"typeId":typeId});
 		if(wordData["code"] !== 0){
 			swal("", wordData["msg"], "error");
 			return;
@@ -379,7 +379,7 @@ function bindUnconfirmedChangeNcrDialogSubmitBtn(){
 				closeOnConfirm: false}, 
 			function(confirm){
 				if(confirm){
-					var isSuccess = alertResult(sendAjax("/TBNCRMS/changeStartNcrInfo",
+					var isSuccess = alertResult(sendAjax("/webapp/changeStartNcrInfo",
 							{'ncrId':ncrId,'fileId':fileId,'typeId':typeId,'sourceId':sourceId,'describe':description,'auditObject':auditObject}
 					));
 					if(isSuccess){
@@ -393,7 +393,7 @@ function bindUnconfirmedChangeNcrDialogSubmitBtn(){
 			return;
 		}
 		
-		var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"code":0,"typeId":typeId});
+		var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"code":0,"typeId":typeId});
 		if(wordData["code"] !== 0){
 			swal("", wordData["msg"], "error");
 			return;
@@ -514,7 +514,7 @@ function clickNewNcrBeforeComitDialogSubmitBtnfinal(){
 		}
 	}
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/insertStartNcrInfo",
+	var isSuccess = alertResult(sendAjax("/webapp/insertStartNcrInfo",
 			{'sourceId':sourceId,'typeId':typeId,'fileId':fileId,'departmentId':departmentId,
 			'describe':description,'shouldAnswerTime':modalnewNcrTime,'auditObject':auditObject}
 	));
@@ -542,7 +542,7 @@ function clickChangeNcrBeforeComitDialogSubmitBtnfinal(){
 		return;
 	}
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/changeStartNcrInfo",
+	var isSuccess = alertResult(sendAjax("/webapp/changeStartNcrInfo",
 			{'ncrId':ncrId,'fileId':fileId,'typeId':typeId,'sourceId':sourceId,'auditObject':auditObject}
 	));
 	if(isSuccess){
@@ -584,7 +584,7 @@ function bindAbandonSubmitNewNcrBtn(){
 		function(confirm){
 			if(confirm){
 				reason = stripencodescript(reason);
-				var isSuccess = alertResult(sendAjax("/TBNCRMS/abandonNewNcrInfo",{'id':id,'reason':reason}));
+				var isSuccess = alertResult(sendAjax("/webapp/abandonNewNcrInfo",{'id':id,'reason':reason}));
 				if(isSuccess){
 					$("#unconfirmedAbandomNcrDialog").modal("hide");
 					$("#newNcrUnconfirmedTable-reflesh").trigger("click");

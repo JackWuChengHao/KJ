@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/TBNCRMS/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项统计简表</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">开具项统计简表</span> 
 					</div>
 					<div class="TXWell well well-sm">
 						<div class="TXBTNArea form-group">
@@ -30,7 +30,7 @@
 	</div>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/TBNCRMS/Business/TXReportForms/init.js"></script>
-	<script type="text/javascript" src="/TBNCRMS/Business/TXReportForms/list.js"></script>
+	<script type="text/javascript" src="/webapp/Business/TXReportForms/init.js"></script>
+	<script type="text/javascript" src="/webapp/Business/TXReportForms/list.js"></script>
 </body>
 </html>

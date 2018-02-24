@@ -2,7 +2,7 @@ $(document).ready(function(){
 });
 
 var historyNcrTable = new TableView('historyNcrTable');
-historyNcrTable.url = '/TBNCRMS/getHistoryNcrInfoList';
+historyNcrTable.url = '/webapp/getHistoryNcrInfoList';
 historyNcrTable.initHeader([
 	{id:'marker',width:2,align:'right',type:'radio'},
 	{id:'index',name:'序号',width:5,align:'center',key:true},

@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 	var newNcrUnconfirmedTable = new TableView('newNcrUnconfirmedTable');
-	newNcrUnconfirmedTable.url = '/TBNCRMS/getUnconfirmedStartNcrInfoList';
+	newNcrUnconfirmedTable.url = '/webapp/getUnconfirmedStartNcrInfoList';
 	newNcrUnconfirmedTable.initHeader([
 		{id:'ico',name:'',width:2,align:'center'},
 		{id:'marker',width:2,align:'right',type:'radio'},
@@ -62,7 +62,7 @@ $(document).ready(function(){
  */
 function getUnconfirmedTableIco(ncrInfo){
 	if(ncrInfo["activitiStatus"] === 1){
-		return '<img class="img img-turndown" alt="提示" src="/TBNCRMS/imgs/u99.png">';
+		return '<img class="img img-turndown" alt="提示" src="/webapp/imgs/u99.png">';
 	};
 }
 /**

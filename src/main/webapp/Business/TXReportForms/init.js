@@ -4,6 +4,6 @@ $(document).ready(function(){
 
 function bindDownloadExcelBtn(){
 	$("#downloadExcelBtn").on('click',function(){
-		window.location.href = "/TBNCRMS/downloadExcel";
+		window.location.href = "/webapp/downloadExcel";
 	});
 }

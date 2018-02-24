@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 	var newNcrUnreplyedTable = new TableView('newNcrUnreplyedTable');
-	newNcrUnreplyedTable.url = '/TBNCRMS/getUnreplyedStartNcrInfoList';
+	newNcrUnreplyedTable.url = '/webapp/getUnreplyedStartNcrInfoList';
 	newNcrUnreplyedTable.initHeader([
 		{id:'marker',width:2,align:'right',type:'radio'},
 		{id:'index',name:'序号',width:5,align:'center',key:true},

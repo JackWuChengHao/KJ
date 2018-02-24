@@ -137,7 +137,7 @@ function bindUnpassedCommitNcrDialogSubmitBtn(){
 			return;
 		}
 	
-		var isSuccess = alertResult(sendAjax("/TBNCRMS/commitNcrMeasureCheck",
+		var isSuccess = alertResult(sendAjax("/webapp/commitNcrMeasureCheck",
 				{'measureId':measure["measureNumber"],'fileId':fileId,'measureJudge':measureJudge,'measureAudit':auditContext}));
 		
 		if(isSuccess){
@@ -152,7 +152,7 @@ function initUnpassUploadInput(){
     //初始化上传控件的样式
     $("#unpassedCommitNcrDialogUpload").fileinput({
 		language : 'zh',
-		uploadUrl : "/TBNCRMS/fileUpload",
+		uploadUrl : "/webapp/fileUpload",
 		maxFileSize : 102400,
 		maxFileCount : 1,
 		showUpload : true,
@@ -191,7 +191,7 @@ function showUnpassedCommitNcrDialogWordSubmitBtn(){
 	}
 	
 	var measure = newNcrUnpassedTable.getSelected()[0];
-	var wordData = sendAjax("/TBNCRMS/readWord",{"fileId":fileId,"measureId":measure["id"],"code":2});
+	var wordData = sendAjax("/webapp/readWord",{"fileId":fileId,"measureId":measure["id"],"code":2});
 	if(wordData["code"] !== 0){
 		swal("", wordData["msg"], "error");
 		return;
@@ -254,7 +254,7 @@ function commitUnpassedCommitNcrDialogfinal(){
 	}
 	var auditContext = stripencodescript($("#TXMeasuresCheckCommitDialogContext").val());
 	
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/commitNcrMeasureCheck",
+	var isSuccess = alertResult(sendAjax("/webapp/commitNcrMeasureCheck",
 			{'measureId':measure["measureNumber"],'fileId':fileId,'measureJudge':measureJudge,'measureAudit':auditContext}));
 	
 	if(isSuccess){
@@ -275,7 +275,7 @@ function showMeasuresDetailDialog(rowIndex){
 	$("#measuresDetailDialogContext").val(newNcrUnpassedTable.get(rowIndex)["planMeasure"]);
 	var measureId = newNcrUnpassedTable.get(rowIndex)["measureNumber"];
 
-	var data = sendAjax("/TBNCRMS/selectNcrMeasureChangeList",{"measureId":measureId});
+	var data = sendAjax("/webapp/selectNcrMeasureChangeList",{"measureId":measureId});
 	if(data["code"] !== 0){
 		swal("提示", data["msg"], "error");
 		return;

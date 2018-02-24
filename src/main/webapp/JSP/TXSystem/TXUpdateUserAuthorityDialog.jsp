@@ -7,7 +7,7 @@
 				<div class="modal-body">
 					<form class="form-horizontal" id="">
 						<div class="form-group">
-							<div class="TXModalContentsSpecial col-md-12"><img src="/TBNCRMS/imgs/authority.png"></div>
+							<div class="TXModalContentsSpecial col-md-12"><img src="/webapp/imgs/authority.png"></div>
 						</div>
 						<div class="form-group">
 							<label class="TXModalContentsSpecialtitle col-md-12" id='userauthority'></label>

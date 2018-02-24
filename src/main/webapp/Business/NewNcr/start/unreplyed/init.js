@@ -83,7 +83,7 @@ function showNcrReasonAndMessage(rowIndex){
 function initReasonsAndMeasuresDetailDialogTable(ncrAnalyzeId){
 	var dialogTable = new TableView('reasonsAndMeasuresDetailDialogTable');
 	dialogTable.putQueryParam("id",ncrAnalyzeId);
-	dialogTable.url = '/TBNCRMS/getMeasureListByAnalyzeId';
+	dialogTable.url = '/webapp/getMeasureListByAnalyzeId';
 	dialogTable.showPageComp = false;
 	dialogTable.initHeader([
 	                        {id:'index',name:'序号',width:10,align:'center',key:true},
@@ -176,7 +176,7 @@ function UnreplyeUnpassDialogSubmitfinal(){
 
 function commitAuditResult(ncrId,result,auditContext){
 	auditContext = stripencodescript(auditContext);
-	var isSuccess = alertResult(sendAjax("/TBNCRMS/auditNcrMeasure",
+	var isSuccess = alertResult(sendAjax("/webapp/auditNcrMeasure",
 			{'ncrId':ncrId,'result':result,'auditContext':auditContext}));
 	if(isSuccess){
 		clearUnreplyeUnpassDialogForm();
