@@ -31,12 +31,12 @@
 			<span class="glyphicon glyphicon-fullscreen"></span>
 			<span class="menu-text">群发信息</span></a>
 			<ul class="submenu">
-				<li id=""><a href="">普通群发</a></li>
-				<li id=""><a href="/webapp/JSP/RSGroupMsg/RSTimedReminder/RSTimeReminder.jsp">定时群发</a></li>
+				<li id=""><a href="/webapp/JSP/RSGroupMsg/RSSendSimpleMsg.jsp">普通群发</a></li>
+				<li id=""><a href="/webapp/JSP/RSGroupMsg/RSTimeReminder.jsp">定时群发</a></li>
 			</ul>
 		</li>
 		
-		<li id=""><a href="/webapp/JSP/RSMegGuard/RSMegGuard.jsp" class="dropdown-toggle">
+		<li id=""><a href="/webapp/JSP/RSMsgGuard/RSMsgGuard.jsp" class="dropdown-toggle">
 			<span class="glyphicon glyphicon-eye-open"></span> 
 			<span class="menu-text">群消息监控</span>
 		</a></li>
@@ -46,7 +46,7 @@
 			<span class="menu-text">数据统计</span>
 		</a></li>
 
-		<li id=""><a href="" class="dropdown-toggle"> 
+		<li id=""><a href="#" class="dropdown-toggle"> 
 			<span class="glyphicon glyphicon-cog"></span>
 			<span class="menu-text">系统 </span>
 		</a></li>
