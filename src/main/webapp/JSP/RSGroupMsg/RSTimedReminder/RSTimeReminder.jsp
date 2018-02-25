@@ -37,4 +37,5 @@
 	src="/webapp/Business/RSTimedReminder/list.js"></script>
 <script type="text/javascript"
 	src="/webapp/Business/RSTimedReminder/init.js"></script>
+	
 </html>
