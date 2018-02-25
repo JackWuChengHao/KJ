@@ -17,7 +17,8 @@
 					<div class="form-group">
 						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span>入群欢迎语</span> 
 					</div>
-					<div class="alert alert-info" role="alert">可设置多条欢迎语内容，当有新成员入群时，系统会随机推送一条欢迎语</div>
+						
+					<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span>可设置多条欢迎语内容，当有新成员入群时，系统会随机推送一条欢迎语</div>
 					<hr/>
 				</div>
 			</div>
