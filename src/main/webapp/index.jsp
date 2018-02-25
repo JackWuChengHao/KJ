@@ -14,7 +14,7 @@
 			<div class="main-content">
 				<div class="container">
 					<h5>欢迎使用</h5>
-					<h1>质量开具项管理系统1.0</h1>
+					<h1>桃娃微信群管理平台1.0</h1>
 				</div>
 			</div>
 		</div>

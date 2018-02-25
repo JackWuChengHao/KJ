@@ -2,29 +2,50 @@
 
 <div class="sidebar" id="sidebar" style="font-family:'华文细黑';">
 	<ul class="nav nav-list">
-<!-- 		<li><a>  -->
-<!-- 			<span class="glyphicon glyphicon-list-alt"></span>  -->
-<!-- 			<span class="menu-text">菜单</span> -->
-<!-- 		</a></li> -->
 	
 		<li><a href="/webapp/index.jsp"> 
 			<span class="glyphicon glyphicon-home"></span> 
 			<span class="menu-text">首页</span>
 		</a></li>
-
-	
-			<li id="NewNcrMain-menu"><a href="#" class="dropdown-toggle"> 
-				<span class="glyphicon glyphicon-certificate"></span>
-				<span class="menu-text">现行开具项 </span></a>
-				<ul class="submenu">
-				
-						<li id="startNcr-menu"><a href="/webapp/JSP/TXNewNcr/TXStartNcr.jsp">开具项发起</a></li>
-					
-						<li id="handleNcr-menu"><a href="/webapp/JSP/TXHandleNcr/TXHandleNcr.jsp">开具项处理</a></li>
-						<li id="validNcr-menu"><a href="/webapp/JSP/TXValidCheckNcr/TXTestNcr.jsp">有效性验证</a></li>
-				</ul>
-			</li>
-
+		
+		<li id=""><a href="#" class="dropdown-toggle"> 
+			<span class="glyphicon glyphicon-thumbs-up"></span> 
+			<span class="menu-text">助手管理</span></a>
+			<ul class="submenu">
+				<li id=""><a href="">助手列表</a></li>
+				<li id=""><a href="">入群欢迎语</a></li>
+				<li id=""><a href="">素材管理</a></li>
+			</ul>
+		</li>
+		
+		<li id=""><a href="#" class="dropdown-toggle"> 
+			<span class="glyphicon glyphicon-th"></span>
+			<span class="menu-text">微信群管理</span></a>
+			<ul class="submenu">
+				<li id=""><a href="">批量操作</a></li>
+				<li id=""><a href="">群信息详情</a></li>
+			</ul>
+		</li>
+		
+		<li id=""><a href="#" class="dropdown-toggle"> 
+			<span class="glyphicon glyphicon-fullscreen"></span>
+			<span class="menu-text">群发信息</span></a>
+			<ul class="submenu">
+				<li id=""><a href="">普通群发</a></li>
+				<li id=""><a href="">定时群发</a></li>
+			</ul>
+		</li>
+		
+		<li id=""><a href="/webapp/JSP/RSMegGuard/RSMegGuard.jsp" class="dropdown-toggle">
+			<span class="glyphicon glyphicon-eye-open"></span> 
+			<span class="menu-text">群消息监控</span>
+		</a></li>
+		
+		
+		<li id=""><a href="/webapp/JSP/RSDataCount/RSDataCount.jsp" class="dropdown-toggle">
+			<span class="glyphicon glyphicon-stats"></span> 
+			<span class="menu-text">数据统计</span>
+		</a></li>
 			<li id="historyNcr-menu"><a href="/webapp/JSP/TXHistoryNcr/TXHistoryNcr.jsp" class="dropdown-toggle">
 				<span class="glyphicon glyphicon-folder-close"></span> 
 				<span class="menu-text">历史开具项</span>

@@ -17,7 +17,7 @@
 					<br />
 					<div class="form-inline">
 						<h4>定时提醒</h4>
-						<button type="button" class="btn btn-primary">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTimeReminderModel">
 							<span class="glyphicon glyphicon-plus"></span> 添加定时提醒
 						</button>
 					</div>
