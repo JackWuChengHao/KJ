@@ -19,7 +19,6 @@
 			</div>
 		</div>
 	</div>
-	<a href="/webapp/JSP/RSTimedReminder/RSTimeReminder.jsp">跳转</a>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
 </body>

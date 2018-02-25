@@ -32,7 +32,7 @@
 			<span class="menu-text">群发信息</span></a>
 			<ul class="submenu">
 				<li id=""><a href="">普通群发</a></li>
-				<li id=""><a href="">定时群发</a></li>
+				<li id=""><a href="/webapp/JSP/RSTimedReminder/RSTimeReminder.jsp">定时群发</a></li>
 			</ul>
 		</li>
 		
@@ -40,7 +40,6 @@
 			<span class="glyphicon glyphicon-eye-open"></span> 
 			<span class="menu-text">群消息监控</span>
 		</a></li>
-		
 		
 		<li id=""><a href="/webapp/JSP/RSDataCount/RSDataCount.jsp" class="dropdown-toggle">
 			<span class="glyphicon glyphicon-stats"></span> 
