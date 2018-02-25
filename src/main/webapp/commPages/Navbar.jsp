@@ -6,7 +6,7 @@
 	<nav class="webappHeadTitle navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"><span id="TBNCRMainTitle">质量开具项管理系统1.0</span></a>
+				<a class="navbar-brand" href="#"><span id="TBNCRMainTitle">桃娃微信群管理平台1.0</span></a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
