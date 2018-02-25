@@ -7,6 +7,9 @@
 <title>入群欢迎语</title>
 </head>
 <body>
+
+	<jsp:include page="./addWelcomeContent.jsp" flush="true"></jsp:include>
+	
 	<jsp:include page="/commPages/Navbar.jsp" flush="true"></jsp:include>
 	<div class="main-container" id="main-container">
 		<div class="main-container-inner">
@@ -20,7 +23,7 @@
 					<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;可设置多条欢迎语内容，当有新成员入群时，系统会随机推送一条欢迎语</div>
 					
 					<div class="form-group">
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTimeReminderModel">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#welcomeModal">
 							<span class="glyphicon glyphicon-plus"></span> 添加欢迎语
 						</button>
 					</div>
@@ -33,9 +36,12 @@
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
 </body>
+
 <script type="text/javascript"
-	src="/webapp/Business/RSTimedReminder/list.js"></script>
+	src="/webapp/Business/common/common.js"></script>
 <script type="text/javascript"
-	src="/webapp/Business/RSTimedReminder/init.js"></script>
+	src="/webapp/Business/GroupWelcomeList/list.js"></script>
+<script type="text/javascript"
+	src="/webapp/Business/GroupWelcomeList/init.js"></script>
 
 </html>
