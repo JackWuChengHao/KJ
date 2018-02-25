@@ -1,8 +1,4 @@
 $(document).ready(function(){
-	formatDate();
-	initNecessaryItems();
-	typeList = sendAjax("/webapp/getTypeListBySource",{'sourceId':null})['rows'];
-	self.setInterval("flushSystemTime()",30*1000);
 });
 
 function stripencodescript(s){
