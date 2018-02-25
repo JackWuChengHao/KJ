@@ -17,7 +17,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-default" id="close_add_welcome_msg" data-dismiss="modal">取消</button>
         <button type="button" id="add_welcome_msg" class="btn btn-primary">添加</button>
       </div>
     </div>

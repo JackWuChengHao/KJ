@@ -23,7 +23,7 @@
 					<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;可设置多条欢迎语内容，当有新成员入群时，系统会随机推送一条欢迎语</div>
 					
 					<div class="form-group">
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#welcomeModal">
+						<button type="button" id="add_welcome" class="btn btn-primary" data-toggle="modal" data-target="#welcomeModal">
 							<span class="glyphicon glyphicon-plus"></span> 添加欢迎语
 						</button>
 					</div>

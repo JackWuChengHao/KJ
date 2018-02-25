@@ -2,7 +2,7 @@ $(document).ready(function(){
 });
 
 var WelcomeList = new TableView('WelcomeList');
-WelcomeList.url = '/webapp/WelcomeList';
+WelcomeList.url = '/wechatass/getWelcomeMsgList';
 WelcomeList.initHeader([
 	{id:'index',name:'序号',width:5,align:'center',key:true},
 	{id:'name',name:'入群欢迎语',width:10,align:'center'},
