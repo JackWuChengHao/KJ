@@ -24,20 +24,13 @@
 					<br />
 					<br />
 					<br />
-					<div id="TimedReminderList" class="TXTableContainer"></div>
+					<div id="TimedReminderList"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<!-- <script type="text/javascript" src="/webapp/Business/NewNcr/handle/common/searchControl.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unconfirmed/init.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unconfirmed/list.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unanalyze/init.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/unanalyze/list.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/execute/init.js"></script>
-	<script type="text/javascript" src="/webapp/Business/NewNcr/handle/execute/list.js"></script> -->
 </body>
  
 <script type="text/javascript"

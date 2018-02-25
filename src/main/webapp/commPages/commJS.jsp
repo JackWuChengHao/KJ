@@ -11,4 +11,3 @@
 	<script type="text/javascript" src="/webapp/Static/Plugin/fileinput/js/fileinput.js"></script>
 	<script type="text/javascript" src="/webapp/Static/Plugin/sweetalert/js/sweetalert.min.js"></script>
 	<script type="text/javascript" src="/webapp/Static/Plugin/webui-popover/js/jquery.webui-popover.js"></script>
-	<script type="text/javascript" src="/webapp/Business/Common/common.js"></script>

@@ -18,14 +18,11 @@
 						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span class="TXPage-title">群数据统计</span> 
 					</div>
 					<hr/>
-					<div id="historyNcrTable" class="TXTableContainer"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
-	<script type="text/javascript" src="/webapp/Business/HistoryNcr/searchControl.js"></script>
-	<script type="text/javascript" src="/webapp/Business/HistoryNcr/list.js"></script>
 </body>
 </html>

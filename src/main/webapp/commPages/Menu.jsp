@@ -46,25 +46,11 @@
 			<span class="glyphicon glyphicon-stats"></span> 
 			<span class="menu-text">数据统计</span>
 		</a></li>
-			<li id="historyNcr-menu"><a href="/webapp/JSP/TXHistoryNcr/TXHistoryNcr.jsp" class="dropdown-toggle">
-				<span class="glyphicon glyphicon-folder-close"></span> 
-				<span class="menu-text">历史开具项</span>
-			</a></li>
 
-			<li id="Report-menu"><a href="/webapp/JSP/TXReportForms/TXNcrReportForms.jsp" class="dropdown-toggle">
-				<span class="glyphicon glyphicon-signal"></span> 
-				<span class="menu-text">报表</span>
-			</a></li>
-
-			<li id="Log-menu"><a href="/webapp/JSP/TXLog/TXNcrLog.jsp" class="dropdown-toggle">
-				<span class="glyphicon glyphicon-calendar"></span>
-				<span class="menu-text">日志</span>
-			</a></li>
-
-			<li id="System-menu"><a href="/webapp/JSP/TXSystem/TXNcrSystem.jsp" class="dropdown-toggle"> 
-				<span class="glyphicon glyphicon-cog"></span>
-				<span class="menu-text">系统 </span>
-			</a></li>
+		<li id="System-menu"><a href="/webapp/JSP/TXSystem/TXNcrSystem.jsp" class="dropdown-toggle"> 
+			<span class="glyphicon glyphicon-cog"></span>
+			<span class="menu-text">系统 </span>
+		</a></li>
 	</ul>
 	
 	<div class="sidebar-collapse" id="sidebar-collapse">
