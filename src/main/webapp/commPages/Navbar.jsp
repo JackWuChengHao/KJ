@@ -3,7 +3,7 @@
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>  
 
-	<nav class="webappHeadTitle navbar navbar-default">
+	<nav class="navbar navbar-default" style="background-color:#223a5e">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#"><span id="TBNCRMainTitle">桃娃微信群管理平台1.0</span></a>

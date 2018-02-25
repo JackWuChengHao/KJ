@@ -12,7 +12,7 @@
 			<span class="glyphicon glyphicon-thumbs-up"></span> 
 			<span class="menu-text">助手管理</span></a>
 			<ul class="submenu">
-				<li id=""><a href="">助手列表</a></li>
+				<li id=""><a href="">我的助手</a></li>
 				<li id=""><a href="">入群欢迎语</a></li>
 				<li id=""><a href="">素材管理</a></li>
 			</ul>
