@@ -4,7 +4,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <jsp:include page="/commPages/commCSS.jsp" flush="true"></jsp:include>
-<title>群数据统计</title>
+<title>素材管理</title>
 </head>
 <body>
 	<jsp:include page="/commPages/Navbar.jsp" flush="true"></jsp:include>
@@ -15,7 +15,7 @@
 				<div class="container">
 					<br>
 					<div class="form-group">
-						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span>群数据统计</span> 
+						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span>素材管理</span> 
 					</div>
 					<hr/>
 				</div>

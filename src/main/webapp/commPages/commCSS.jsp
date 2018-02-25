@@ -8,3 +8,4 @@
     <link rel="stylesheet" type="text/css" href="/webapp/Static/Plugin/fileinput/css/fileinput.min.css" />
     <link rel="stylesheet" type="text/css" href="/webapp/Static/Plugin/sweetalert/css/sweetalert.css" />
     <link rel="stylesheet" type="text/css" href="/webapp/Static/Plugin/webui-popover/css/jquery.webui-popover.css" />
+ 	<link rel="stylesheet" type="text/css" href="/webapp/CSS/RSWechatMgrStyle.css" />

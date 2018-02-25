@@ -12,9 +12,9 @@
 			<span class="glyphicon glyphicon-thumbs-up"></span> 
 			<span class="menu-text">助手管理</span></a>
 			<ul class="submenu">
-				<li id=""><a href="">我的助手</a></li>
-				<li id=""><a href="">入群欢迎语</a></li>
-				<li id=""><a href="">素材管理</a></li>
+				<li id=""><a href="/webapp/JSP/RSAssistantMgr/RSMyAssistants.jsp">我的助手</a></li>
+				<li id=""><a href="/webapp/JSP/RSAssistantMgr/RSWelcome.jsp">入群欢迎语</a></li>
+				<li id=""><a href="/webapp/JSP/RSAssistantMgr/RSMaterials.jsp">素材管理</a></li>
 			</ul>
 		</li>
 		
@@ -22,8 +22,8 @@
 			<span class="glyphicon glyphicon-th"></span>
 			<span class="menu-text">微信群管理</span></a>
 			<ul class="submenu">
-				<li id=""><a href="">批量操作</a></li>
-				<li id=""><a href="">群信息详情</a></li>
+				<li id=""><a href="/webapp/JSP/RSWechatGroupMgr/RSBatchOperate.jsp">批量操作</a></li>
+				<li id=""><a href="/webapp/JSP/RSWechatGroupMgr/RSGroupMsgs.jsp">群信息详情</a></li>
 			</ul>
 		</li>
 		
@@ -46,7 +46,7 @@
 			<span class="menu-text">数据统计</span>
 		</a></li>
 
-		<li id="System-menu"><a href="/webapp/JSP/TXSystem/TXNcrSystem.jsp" class="dropdown-toggle"> 
+		<li id=""><a href="" class="dropdown-toggle"> 
 			<span class="glyphicon glyphicon-cog"></span>
 			<span class="menu-text">系统 </span>
 		</a></li>
