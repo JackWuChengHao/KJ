@@ -36,6 +36,9 @@
 	<jsp:include page="/commPages/Foot.jsp" flush="true"></jsp:include>
 	<jsp:include page="/commPages/commJS.jsp" flush="true"></jsp:include>
 </body>
+
+<script type="text/javascript"
+	src="/webapp/Business/common/common.js"></script>
 <script type="text/javascript"
 	src="/webapp/Business/GroupWelcomeList/list.js"></script>
 <script type="text/javascript"
