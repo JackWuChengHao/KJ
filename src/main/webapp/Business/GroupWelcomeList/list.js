@@ -5,7 +5,7 @@ var WelcomeList = new TableView('WelcomeList');
 WelcomeList.url = '/webapp/WelcomeList';
 WelcomeList.initHeader([
 	{id:'index',name:'序号',width:5,align:'center',key:true},
-	{id:'name',name:'入群欢迎语',width:10,align:'center'},
+	{id:'name',name:'入群欢迎语',width:95,align:'left'},
 ]);
 
 WelcomeList.ajaxCallback = function(data){

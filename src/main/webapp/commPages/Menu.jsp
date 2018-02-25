@@ -41,6 +41,11 @@
 			<span class="menu-text">群消息监控</span>
 		</a></li>
 		
+		<li id=""><a href="/webapp/JSP/RSFixProblem/RSFixProblem.jsp" class="dropdown-toggle">
+			<span class="glyphicon glyphicon-pencil"></span> 
+			<span class="menu-text">用户问题处理</span>
+		</a></li>
+		
 		<li id=""><a href="/webapp/JSP/RSDataCount/RSDataCount.jsp" class="dropdown-toggle">
 			<span class="glyphicon glyphicon-stats"></span> 
 			<span class="menu-text">数据统计</span>

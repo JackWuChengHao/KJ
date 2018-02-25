@@ -17,7 +17,7 @@
 					<div class="form-group">
 						<img src="/webapp/imgs/line.png">&nbsp;&nbsp;<span>群消息监控</span> 
 					</div>
-					<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-info-sign"></span>可设置多条欢迎语内容，当有新成员入群时，系统会随机推送一条欢迎语</div>
+					<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-info-sign"></span>违规信息如下，您可以对违规者发送警告消息</div>
 					<hr/>
 				</div>
 			</div>
